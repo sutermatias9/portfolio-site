@@ -1,0 +1,14 @@
+{
+  "orgName": "Portfolio Scratch Org",
+  "edition": "Developer",
+  "adminEmail": "suter.uni9@gmail.com",
+  "features": ["EnableSetPasswordInApi"],
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "mobileSettings": {
+      "enableS1EncryptedStoragePref2": false
+    }
+  }
+}
