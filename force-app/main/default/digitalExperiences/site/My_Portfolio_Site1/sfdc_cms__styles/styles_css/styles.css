@@ -13,3 +13,7 @@ html {
 body {
   margin: 0;
 }
+
+.community_byo-scoped-header-and-footer__main {
+  z-index: 0;
+}
