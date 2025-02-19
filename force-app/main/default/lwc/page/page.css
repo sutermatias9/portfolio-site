@@ -1,0 +1,62 @@
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-section .banner {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.hero-section .my-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section .name {
+  font-size: 5em;
+}
+
+.hero-section .role {
+  font-size: 1.7em;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-button {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    box-shadow 0.3s;
+}
+
+.icon-button.linkedin {
+  border-radius: 10%;
+}
+
+.icon-button.github {
+  border-radius: 50%;
+}
+
+.github:hover {
+  box-shadow: rgba(0, 0, 0, 0.473) 0px 3px 15px;
+}
+
+.linkedin:hover {
+  box-shadow: #0077b78b 0px 3px 15px;
+}
+
+.icon-button:hover {
+  transform: scale(1.1);
+}
