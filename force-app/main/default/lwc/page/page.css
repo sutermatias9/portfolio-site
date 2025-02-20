@@ -1,10 +1,5 @@
-/* @font-face {
-  font-family: "PlayfairDisplayBold";
-  src: url("portfolio-suter-dev-ed/s/sfsites/c/resource/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf")
-    format("TrueType");
-} */
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: interLight;
 }
 
 .hero-section {
@@ -23,26 +18,36 @@ body {
 .hero-section .my-info {
   display: flex;
   flex-direction: column;
+  gap: 0;
 }
 
 .hero-section .name {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Poppins", serif;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #0070e0, #00a1e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
   font-size: 5em;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing: 12px;
 }
 
 .hero-section .role {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Alegreya-SemiBoldItalic", serif;
   font-weight: 400;
   font-size: 1.7em;
+  color: #122574;
+  letter-spacing: 2px;
+  margin-top: -10px;
+  margin-bottom: 55px;
 }
 
 .social-buttons {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 .icon-button {
@@ -74,8 +79,16 @@ body {
   transform: scale(1.1);
 }
 
+section {
+  margin-bottom: 70px;
+}
+
 h3 {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #0070d2;
   margin-bottom: 40px;
+  width: 20%;
 }
 
 h4 {
@@ -84,7 +97,7 @@ h4 {
 
 h3,
 h4 {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Raleway-SemiBold", sans-serif;
 }
 
 .projects {
