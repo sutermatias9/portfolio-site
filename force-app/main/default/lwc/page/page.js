@@ -10,4 +10,11 @@ export default class Page extends LightningElement {
     IMAGES + "/static_images/images/shopping-cart-screenshot.png";
   coverageScreenshot =
     IMAGES + "/static_images/images/class-coverage-screenshot.png";
+  examScreenshot =
+    IMAGES + "/static_images/images/exam-simulator-screenshot.png";
+
+  handleRedirect(event) {
+    const url = event.currentTarget.dataset.url;
+    window.open(url, "_blank");
+  }
 }

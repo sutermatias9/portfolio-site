@@ -35,8 +35,14 @@
                                     apply filters, and add items to their cart.</p>
                             </div>
                             <div class="projects__actions">
-                                <button class="github"><img src={githubIcon} alt="">Github</button>
-                                <button class="demo"><img src={playIcon} alt="">Demo</button>
+                                <button class="github" onclick={handleRedirect}
+                                    data-url="https://github.com/sutermatias9/shopping-cart">
+                                    <img src={githubIcon} alt="">Github
+                                </button>
+                                <button class="demo" onclick={handleRedirect}
+                                    data-url="https://shopping-cart-dev-ed.trailblaze.my.site.com/demo">
+                                    <img src={playIcon} alt="">Demo
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -52,24 +58,38 @@
                             </div>
 
                             <div class="projects__actions">
-                                <button class="github"><img src={githubIcon} alt="">Github</button>
-                                <button class="demo"><img src={playIcon} alt="">Demo</button>
+                                <button class="github" onclick={handleRedirect}
+                                    data-url="https://github.com/sutermatias9/code-coverage-viewer">
+                                    <img src={githubIcon} alt="">Github
+                                </button>
+                                <button class="demo" onclick={handleRedirect}
+                                    data-url="https://class-coverage-dev-ed.develop.my.site.com/demo">
+                                    <img src={playIcon} alt="">Demo
+                                </button>
                             </div>
                         </div>
                     </div>
 
                     <div class="projects__tile">
-                        <img src={shoppingScreenshot} alt="">
+                        <img src={examScreenshot} alt="">
 
                         <div class="projects__tile-body">
                             <div>
                                 <h4>Exam Simulator</h4>
-                                <p>DESCRIPTION NEEDED</p>
+                                <p>Simulates a Salesforce certification exam. Users can select
+                                    an exam, answer questions, and review their results with correct and incorrect
+                                    answers highlighted.</p>
                             </div>
 
                             <div class="projects__actions">
-                                <button class="github"><img src={githubIcon} alt="">Github</button>
-                                <button class="demo"><img src={playIcon} alt="">Demo</button>
+                                <button class="github" onclick={handleRedirect}
+                                    data-url="https://github.com/sutermatias9/salesforce-exam-prep">
+                                    <img src={githubIcon} alt=""> Github
+                                </button>
+                                <button class="demo" onclick={handleRedirect}
+                                    data-url="https://cert-exam-simulator-dev-ed.develop.my.site.com/demo">
+                                    <img src={playIcon} alt="">Demo
+                                </button>
                             </div>
                         </div>
                     </div>
