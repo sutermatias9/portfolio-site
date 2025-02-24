@@ -1,5 +1,5 @@
-body {
-  font-family: interLight;
+* {
+  font-family: "Quicksand";
 }
 
 .hero-section {
@@ -83,100 +83,34 @@ section {
   margin-bottom: 70px;
 }
 
-h3 {
-  font-size: 1.4em;
-  letter-spacing: 2px;
-  border-bottom: 2px solid #0070d2;
-  margin-bottom: 40px;
-  width: 20%;
-}
-
 h4 {
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
-h3,
-h4 {
-  font-family: "Raleway-SemiBold", sans-serif;
-}
-
-.projects {
+section:first-child {
   margin-top: 140px;
 }
 
-.projects__tiles {
-  display: flex;
-  justify-content: space-between;
-}
+/* @font-face {
+  font-family: 'interLight';
+  src: url('{ basePath }/sfsites/c/resource/fonts/Inter/static/Inter_18pt-Light.ttf') format('woff');
+} 
 
-.projects__tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 450px;
-  width: 300px;
-  border: 1px solid #075283;
-  border-radius: 20px;
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  background-color: #def2ff;
-  overflow: hidden;
-}
+@font-face {
+  font-family: 'Poppins';
 
-.projects__tile img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-}
+  src: url('{ basePath }/sfsites/c/resource/fonts/Poppins/Poppins-Regular.ttf') format('woff');
+}  
 
-.projects__tile-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-  flex-grow: 1;
-}
+@font-face {
+  font-family: 'Alegreya-SemiBoldItalic';
 
-.projects__actions {
-  display: flex;
-  justify-content: space-around;
-}
+  src: url('{ basePath }/sfsites/c/resource/fonts2/Alegreya/static/Alegreya-SemiBoldItalic.ttf') format('woff');
+}  
 
-.projects__actions button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  width: 90px;
-  transition:
-    transform 0.2s,
-    box-shadow 0.3s;
-}
+@font-face {
+  font-family: 'Raleway-SemiBold';
 
-.projects__actions button img {
-  height: 20px;
-  width: 20px;
-}
-
-.projects__actions button.github {
-  background-color: white;
-}
-
-.projects__actions button.demo {
-  background-color: #8cb4cf;
-}
-
-.projects__actions button:hover {
-  transform: scale(1.1);
-  box-shadow:
-    rgba(0, 0, 0, 0.2) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
-}
-
-.note {
-  margin-top: 50px;
-  text-align: center;
-  font-style: italic;
-}
+  src: url('{ basePath }/sfsites/c/resource/fonts2/Raleway/static/Raleway-SemiBold.ttf') format('woff');
+}  */
