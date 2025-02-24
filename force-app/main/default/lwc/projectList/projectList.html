@@ -1,0 +1,77 @@
+<template>
+    <h1>Projects</h1>
+
+    <div class="projects__tiles">
+        <div class="projects__tile">
+            <img src={shoppingScreenshot} alt="">
+
+            <div class="projects__tile-body">
+                <div>
+                    <h2>Shopping Cart</h2>
+                    <p>This project simulates a basic e-commerce site within Salesforce. Users can browse
+                        products,
+                        apply filters, and add items to their cart.</p>
+                </div>
+                <div class="projects__actions">
+                    <button class="github" onclick={handleRedirect}
+                        data-url="https://github.com/sutermatias9/shopping-cart">
+                        <img src={githubIcon} alt="">Github
+                    </button>
+                    <button class="demo" onclick={handleRedirect}
+                        data-url="https://shopping-cart-dev-ed.trailblaze.my.site.com/demo">
+                        <img src={playIcon} alt="">Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects__tile">
+            <img src={coverageScreenshot} alt="">
+
+            <div class="projects__tile-body">
+                <div>
+                    <h2>Code Coverage</h2>
+                    <p>This project is designed to visualize and retrieve code coverage for Apex classes in
+                        Salesforce using the Tooling API.</p>
+                </div>
+
+                <div class="projects__actions">
+                    <button class="github" onclick={handleRedirect}
+                        data-url="https://github.com/sutermatias9/code-coverage-viewer">
+                        <img src={githubIcon} alt="">Github
+                    </button>
+                    <button class="demo" onclick={handleRedirect}
+                        data-url="https://class-coverage-dev-ed.develop.my.site.com/demo">
+                        <img src={playIcon} alt="">Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects__tile">
+            <img src={examScreenshot} alt="">
+
+            <div class="projects__tile-body">
+                <div>
+                    <h2>Exam Simulator</h2>
+                    <p>Simulates a Salesforce certification exam. Users can select
+                        an exam, answer questions, and review their results with correct and incorrect
+                        answers highlighted.</p>
+                </div>
+
+                <div class="projects__actions">
+                    <button class="github" onclick={handleRedirect}
+                        data-url="https://github.com/sutermatias9/salesforce-exam-prep">
+                        <img src={githubIcon} alt=""> Github
+                    </button>
+                    <button class="demo" onclick={handleRedirect}
+                        data-url="https://cert-exam-simulator-dev-ed.develop.my.site.com/demo">
+                        <img src={playIcon} alt="">Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p class="note">Note: Projects may take a moment to load.</p>
+</template>
