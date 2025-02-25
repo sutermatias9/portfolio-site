@@ -1,4 +1,5 @@
 import { LightningElement } from 'lwc';
+import { reduceErrors } from 'c/ldsUtils';
 import ToastContainer from 'lightning/toastContainer';
 import Toast from 'lightning/toast';
 
@@ -19,7 +20,7 @@ export default class Page extends LightningElement {
         const { isSuccess, error } = event.detail;
 
         if (isSuccess) this.showToast('Email sent successfully!', null, 'success');
-        else this.showToast('Failed to send email. Please try again later.', null, 'error'); // falta reduceError();
+        else this.showToast('Failed to send email. Please try again later.', reduceErrors(error), 'error');
     }
 
     handleRedirect(event) {
