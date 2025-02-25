@@ -5,6 +5,7 @@ export default class ContactMe extends LightningElement {
     name;
     email;
     message;
+    isSendingEmail = false;
 
     handleInputChange(event) {
         this[event.target.name] = event.target.value;
@@ -13,6 +14,8 @@ export default class ContactMe extends LightningElement {
     handleSubmit() {
         const form = this.template.querySelector('form');
         if (form.checkValidity()) {
+            this.isSendingEmail = true;
+
             sendEmail({ name: this.name, senderEmail: this.email, message: this.message })
                 .then((isEmailSent) => {
                     if (isEmailSent) {
@@ -22,7 +25,8 @@ export default class ContactMe extends LightningElement {
                 })
                 .catch((error) => {
                     this.dispatchEvent(new CustomEvent('emailsent', { detail: { isSuccess: false, error: error } }));
-                });
+                })
+                .finally(() => (this.isSendingEmail = false));
         } else {
             form.reportValidity();
         }
