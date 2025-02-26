@@ -1,94 +1,99 @@
 h1 {
-  font-size: 1.4em;
-  letter-spacing: 2px;
-  border-bottom: 2px solid #0070d2;
-  margin-bottom: 40px;
-  width: 20%;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #0070d2;
+    margin-bottom: 40px;
+    width: 20%;
 }
 
 h2 {
-  margin-bottom: 20px;
-  font-weight: bold;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
 h1,
 h2 {
-  font-family: "Raleway-SemiBold", sans-serif;
+    font-family: 'Raleway-SemiBold', sans-serif;
 }
 
 .projects__tiles {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .projects__tile {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 450px;
-  width: 300px;
-  border: 1px solid #075283;
-  border-radius: 20px;
-  box-shadow:
-    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-  background-color: #def2ff;
-  overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 450px;
+    width: 300px;
+    margin-bottom: 40px;
+    border: 1px solid #075283;
+    border-radius: 20px;
+    box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #def2ff;
+    overflow: hidden;
 }
 
 .projects__tile img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 
 .projects__tile-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-  flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    flex-grow: 1;
 }
 
 .projects__actions {
-  display: flex;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
 
 .projects__actions button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 10px;
-  width: 90px;
-  transition:
-    transform 0.2s,
-    box-shadow 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 90px;
+    transition:
+        transform 0.2s,
+        box-shadow 0.3s;
 }
 
 .projects__actions button img {
-  height: 20px;
-  width: 20px;
+    height: 20px;
+    width: 20px;
 }
 
 .projects__actions button.github {
-  background-color: white;
+    background-color: white;
 }
 
 .projects__actions button.demo {
-  background-color: #8cb4cf;
+    background-color: #8cb4cf;
 }
 
 .projects__actions button:hover {
-  transform: scale(1.1);
-  box-shadow:
-    rgba(0, 0, 0, 0.2) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+    transform: scale(1.1);
+    box-shadow:
+        rgba(0, 0, 0, 0.2) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+}
+
+.projects__tile:last-child {
+    margin: 0 auto 50px auto;
 }
 
 .note {
-  margin-top: 50px;
-  text-align: center;
-  font-style: italic;
+    text-align: center;
+    font-style: italic;
 }
