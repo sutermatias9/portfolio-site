@@ -23,6 +23,7 @@ h2 {
 }
 
 .projects__tile {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,6 +38,78 @@ h2 {
         rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     background-color: #def2ff;
     overflow: hidden;
+}
+
+.pills {
+    width: calc(100% - 5px);
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* Hide initially */
+}
+
+.pills::-webkit-scrollbar {
+    height: 6px; /* Small height */
+}
+
+.pills::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.pills::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3); /* Light color */
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+/* Hide scrollbar when not hovering */
+.pills:hover {
+    scrollbar-color: rgba(0, 0, 0, 0.5) transparent; /* Darker on hover */
+}
+
+.pills:hover::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.pills span {
+    font-weight: 500;
+    font-size: 0.9em;
+    border-radius: 10px;
+    padding: 0 7px;
+    margin-right: 5px;
+}
+
+.pills span.service-cloud {
+    border: 2px rgb(64, 1, 64) solid;
+    background-color: rgb(251, 212, 251);
+}
+
+.pills span.experience-cloud {
+    border: 2px rgb(90, 23, 2) solid;
+    background-color: rgb(248, 209, 197);
+}
+
+.pills span.lwc {
+    border: 2px rgb(90, 90, 2) solid;
+    background-color: rgb(255, 255, 215);
+}
+
+.pills span.apex {
+    border: 2px rgb(1, 28, 78) solid;
+    background-color: rgb(199, 218, 252);
+}
+
+.pills span.api-rest {
+    border: 2px rgb(78, 1, 1) solid;
+    background-color: rgb(249, 195, 195);
+}
+
+.pills span.web-service {
+    border: 2px rgb(1, 78, 63) solid;
+    background-color: rgb(198, 252, 242);
 }
 
 .projects__tile img {
